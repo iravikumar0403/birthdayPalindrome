@@ -10,7 +10,7 @@ button.addEventListener("click", () => {
   }else{
       errorEl.innerHTML = ""
   }
-
+  outputEl.innerHTML = `<img class="processing-gif" src="https://c.tenor.com/XpXsPDTXhYQAAAAC/math-numbers.gif" alt="processing">`
   let dateObj = {
     day: inputDate.value.split("-")[2],
     month: inputDate.value.split("-")[1],
@@ -18,11 +18,15 @@ button.addEventListener("click", () => {
   }
 
   if (checkPalindromeForAllVariations(dateObj)) {
-    outputEl.innerHTML = "Yay! 🥳 Your Birthday is a Palindrome.";
+    setTimeout(() => {
+      outputEl.innerHTML = "Yay! 🥳 Your Birthday is a Palindrome.";
+    }, 3000);
   } else {
     let [noOfDaysMissed, nextPalindromeDate] = getNextPalindromeDate(dateObj);
-    outputEl.innerHTML = `<p>Alas! 😢 You missed by ${noOfDaysMissed} ${noOfDaysMissed === 1 ? "day" : "days"}. <br>
-    Next Palindrome date is ${nextPalindromeDate.day}-${nextPalindromeDate.month}-${nextPalindromeDate.year}</p>`
+    setTimeout(() => {
+      outputEl.innerHTML = `<p>Alas! 😢 You missed by ${noOfDaysMissed} ${noOfDaysMissed === 1 ? "day" : "days"}. <br>
+      Next Palindrome date is ${nextPalindromeDate.day}-${nextPalindromeDate.month}-${nextPalindromeDate.year}</p>`
+    }, 3000);
   }
 });
 

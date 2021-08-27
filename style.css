@@ -35,7 +35,7 @@ main{
 
 .sub-text{
     font-weight: 400;
-    margin-bottom: 20px;
+    margin: 10px 0px 20px 0px;
 }
 
 input{
@@ -66,4 +66,9 @@ input{
     margin: 20px;
     letter-spacing: 0.6;
     line-height: 1.3;
+}
+
+.processing-gif {
+    border-radius: 10px;
+    width: 300px;
 }
