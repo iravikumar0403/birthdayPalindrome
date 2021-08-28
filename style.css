@@ -72,3 +72,39 @@ input{
     border-radius: 10px;
     width: 300px;
 }
+
+.footer {
+    background-color: var(--primary-color);
+    border-top-right-radius: 1.5rem;
+    padding: 1.5rem 0rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: -2px -2px 8px #1d9783;
+}
+
+.footer-heading {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer-pills {
+    padding-left: 0rem;
+    margin: auto;
+}
+
+.footer .link {
+    color: black;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
+.link {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+}
